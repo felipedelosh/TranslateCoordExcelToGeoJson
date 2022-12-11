@@ -38,14 +38,14 @@ for i in f.split("\n")[1:-1]:
     # Only PE
     if data[1] == "PE":
         city_name = data[9]
-        city_lat = "-12.04318"
-        city_lng = "-77.02824"
+        city_lat = "-12.0666"
+        city_lng = "-77.0666"
         if data[15] != "NULL":
             city_lat = data[15]
         if data[16] != "NULL":
             city_lng = data[16]
         
-        finalData[city_name] = city_lat+","+city_lng
+        finalData[city_name] = city_lng+","+city_lat
 
 
 
